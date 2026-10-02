@@ -34,6 +34,52 @@ body {
    TODO: .card__title: rozmiar z clamp(), np. clamp(1.1rem, 2.5vw, 1.5rem).
    TODO: .card__link: wygląd przycisku; dodaj :hover i :focus-visible. */
 
+   .card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card__body {
+  padding: var(--odstep);
+}
+
+.card__tag {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--kolor-akcent);
+}
+
+.card__title {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+.card__link {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  background: var(--kolor-glowny);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.card__link:hover {
+  opacity: 0.85;
+}
+
+.card__link:focus-visible {
+  outline: 3px solid var(--kolor-akcent);
+  outline-offset: 3px;
+}
+
 /* ETAP 3: układ wielu kart (responsywność) -------------------------------
    TODO: .cards jako Grid z odstępem.
    TODO: kolumny z auto-fit i minmax, np.
