@@ -86,6 +86,12 @@ body {
          grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
    TODO: sprawdź w narzędziach deweloperskich szerokości 360, 768 i 1280 px. */
 
+   .cards {
+  display: grid;
+  gap: var(--odstep);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
 /* ETAP 4 (dla chętnych) ---------------------------------------------------
    TODO: tryb ciemny: @media (prefers-color-scheme: dark) { ... }
    TODO: container query: układ poziomy karty, gdy kontener jest szeroki. */
