@@ -15,6 +15,17 @@
   --odstep: 1rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--kolor-tlo);
+  color: var(--kolor-tekst);
+}
+
 /* ETAP 2: wygląd karty (mobile-first, jedna kolumna) ---------------------
    TODO: .card: tło, zaokrąglenie, cień, overflow: hidden.
    TODO: .card img: width: 100%; height: auto.
